@@ -1,9 +1,9 @@
 name: flutter_esim
 description: "Flutter eSim, checker and installer"
 version: 0.0.1
-homepage: https://github.com/hiennguyen92/flutter_callkit_incoming
-repository: https://github.com/hiennguyen92/flutter_callkit_incoming
-issue_tracker: https://github.com/hiennguyen92/flutter_callkit_incoming/issues
+homepage: https://github.com/hiennguyen92/flutter_esim
+repository: https://github.com/hiennguyen92/flutter_esim
+issue_tracker: https://github.com/hiennguyen92/flutter_esim/issues
 
 environment:
   sdk: '>=3.3.0 <4.0.0'
