@@ -1,5 +1,3 @@
-import 'package:flutter/services.dart';
-
 import 'flutter_esim_platform_interface.dart';
 
 class FlutterEsim {
