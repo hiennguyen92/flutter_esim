@@ -13,9 +13,9 @@ class MethodChannelFlutterEsim extends FlutterEsimPlatform {
   final eventChannel = const EventChannel('flutter_esim_events');
 
   @override
-  Future<bool> isSupportESim() async {
+  Future<bool> isSupportESim(List<String>? newer) async {
     final isSupportESim =
-        await methodChannel.invokeMethod<bool>('isSupportESim');
+        await methodChannel.invokeMethod<bool>('isSupportESim', []);
     return isSupportESim ?? false;
   }
 
@@ -32,15 +32,11 @@ class MethodChannelFlutterEsim extends FlutterEsimPlatform {
     return result ?? "";
   }
 
-
   @override
   Stream<dynamic> get onEvent =>
       eventChannel.receiveBroadcastStream().map(_receiveCallEvent);
 
-
   dynamic _receiveCallEvent(dynamic data) {
     return data;
   }
-
-
 }

@@ -2,8 +2,8 @@ import 'flutter_esim_platform_interface.dart';
 
 class FlutterEsim {
 
-  Future<bool> isSupportESim() async {
-    return FlutterEsimPlatform.instance.isSupportESim();
+  Future<bool> isSupportESim(List<String>? newer) async {
+    return FlutterEsimPlatform.instance.isSupportESim(newer);
   }
 
   Future<String> installEsimProfile(String profile) async {
@@ -15,6 +15,4 @@ class FlutterEsim {
   }
 
   Stream<dynamic> get onEvent => FlutterEsimPlatform.instance.onEvent;
-
-
 }
