@@ -1,3 +1,7 @@
+## 0.0.4
+
+* Downgrade Dart version
+
 ## 0.0.3
 
 * Update README.md
