@@ -14,6 +14,11 @@ class EsimChecker: NSObject {
     
     
     let internalSupportedModels = [
+        //iPhone 16
+        "iPhone17,1",
+        "iPhone17,2",
+        "iPhone17,3",
+        "iPhone17,4",
         //iPhone 15
         "iPhone15,4", //15
         "iPhone15,5", //15Plus
